@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-family: "arial", "sans-serif";
+}
+
+.google {
+    font-family: "arial", "sans-serif";
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+}
+
+.links li {
+    font-size: 25px;
+    margin: 15px;
+    list-style: none;
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-box {
+    background-color: rgb(32, 32, 32);
+    border: 1px solid white;
+    font-size: 30px;
+    border-radius: 25px;
+    color: white;
+}
+
+.search-box:hover,
+.search-box:focus {
+    background-color: rgb(85, 85, 85);
+}
+
+.submit-button {
+    font-size: 15px;
+    margin-top: 28px;
+    border-radius: 5px;
+    background-color: rgb(105, 104, 104);
+    color: white;
+    padding: 10px;
+}
+
+
+.google {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+.search-heading {
+    color: rgb(27, 25, 25);
+    align-content: flex-start;
+}
+
+.location {
+    color: red;
+    font-size: 20px;
+}
+
+
+.input-headings {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form-advanced {
+    display: inline-block;
+
+}
+
+
+.label-text {
+    font-size: 22px;
+}
+
+label {
+    display: inline-block;
+    width: 190px;
+  }
+
+input {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.submit-button-advanced {
+    font-size: 15px;
+    margin-top: 28px;
+    border-radius: 5px;
+    background-color: rgb(53, 63, 201);
+    color: white;
+    padding: 10px;
+    justify-content: end;
+}
