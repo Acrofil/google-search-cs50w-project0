@@ -8,38 +8,55 @@
     <body>
 
         <div>
-            <ul class="links">
-                <li><span class="location">Advanced Search</span></li>
-                <li><a class="item" href="index.html">Back to Google Search</a></li>
+            <ul class="links-advanced">
+                <li><a href="index.html"><img class="google" src="https://www.google.bg/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="google-logo" 
+            width="74px" 
+            height="24px"></a></li>
+                <li><a class="item" href="index.html">Google Search</a></li>
             </ul>
         </div>
 
+        <div class="appbar">
+            <label style="margin-left:10px">Advanced Search</label>
+            <div class="appbar-border"></div>
+        </div>
 
+        <div class="form-box">
         <form class="search-form-advanced" action="https://google.com/search">       
-
+            <span class="find-pages">Find pages with...</span>
             <div>
                 <label for="all_words">all these words:</label>
                 <input id="name" name="as_q" id="all_words" type="text" size="70" />
+                <span class="span-form-advanced">Enter the important words: tricolor rat terrier</span>
 
             </div>
 
             <div>
                 <label for="exact_word">this exact word or phrase:</label>
                 <input id="lastname" name="as_epq" id="exact_word" type="text" size="70" />
+                <span class="span-form-advanced">Put the exact words in quotes: "rat terrier"</span>
             </div>
 
             <div>
                 <label for="any_word">any of these words:</label>
                 <input id="lastname" name="as_oq" id="any_word" type="text" size="70"/>
+                <span class="span-form-advanced">Enter OR between all the words you want: miniature OR standard
+                </span>
             </div>
 
             <div>
                 <label for="none_word">none of these words:</label>
                 <input id="lastname" name="as_eq" id="none_word" type="text" size="70"/>
+                <span class="span-form-advanced">Place a minus sign directly in front of the words you don't want: -rodent, - "Jack Russell"
+                </span>
             </div>
 
             <input class="submit-button-advanced" type="submit" value="Google Search">
+           
         </form>
+
+        </div>
 
     </body>
 </html>
