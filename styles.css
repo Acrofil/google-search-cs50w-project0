@@ -2,23 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
 body {
+    height: 100vh;
     background-color: white;
     color: black;
     font-family: "arial", "sans-serif";
     font-size: 16px;
 }
 
-.google {
-    font-family: "arial", "sans-serif";
+.form-group input {
+    width: 35%;
 }
 
 .span-images {
     color: #4285f4;
     font-size: 16px/16px;
     position: relative;
-    left: 115px;
-    bottom: 50px;
+    right: 50px;
+    bottom: 15px;
 
 }
 .links {
@@ -56,8 +58,21 @@ body {
     
 }
 
+.page-container {
+    display: flex;
+    min-height: 92px;
+    max-height: 292px;
+    height: calc(100% - 560px);
+    justify-content: center;
+ 
+}
+
+.img-container {
+    display: flex;
+    align-items: end;
+}
+
 .search-form {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +87,7 @@ body {
     border-radius: 25px;
     color: black;
     outline: none;
+    padding-left: 25px;
 }
 
 .search-box:hover,
@@ -96,9 +112,8 @@ body {
     border: 1px solid #f8f9fa;
 }
 
-
 .google {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -112,8 +127,6 @@ label {
     transform: translateY(-50%);
     color: silver;
   }
-
-  
 
 .search-heading {
     color: rgb(27, 25, 25);
@@ -142,17 +155,15 @@ label {
     margin-top: 25px;
 }
 
-
-.input-headings {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
+.search-form-advanced {
+    margin: 50px 50px;
 }
 
-.search-form-advanced {
-    display: inline-block;
-
-
+.search-form-advanced .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 0;
 }
 
 
@@ -174,20 +185,20 @@ input {
     font-size: 15px;
     margin-top: 28px;
     border-radius: 5px;
-    background-color: rgb(53, 63, 201);
+    background-color: #4d90fe;
     color: white;
     padding: 10px;
-    justify-content: end;
+  
+  
 }
 
 .btn-container {
     display: flex;
-
     justify-content: flex-end;
 }
 
 .span-form-advanced {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .form-box {
@@ -198,4 +209,39 @@ input {
 
 .find-pages {
     font-size: 25px;
+}
+
+.adv-txtinput {
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .span-form-advanced {
+        display: none;
+    }
+    
+}
+
+.btn-container-adv {
+    border: 1px solid green;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.form-box-adv {
+    width: 100%;
+    clear: both;
+}
+
+.form-group {
+    clear: both;
+    vertical-align: baseline;
+    display: flex;
+}
+
+.right-align {
+    display: flex;
+    justify-content: center;
 }
